@@ -31,17 +31,17 @@ public class HelloCalculator {
         return calculateService.plus(num1, num2);
     }
 
-    @GetMapping(path = "/minus")
+    @GetMapping (path = "/calculator/minus")
     public Integer minus(@RequestParam Integer num1, @RequestParam Integer num2) {
         return calculateService.minus(num1, num2);
     }
 
-    @GetMapping(path = "/calculator/multiply")
+    @GetMapping (path = "/calculator/multiply")
     public Integer multiply(@RequestParam Integer num1, @RequestParam Integer num2) {
         return calculateService.multiply(num1, num2);
     }
 
-    @GetMapping(path = "/calculator/divide")
+    @GetMapping (path = "divide")
     public Integer divide(@RequestParam Integer num1, @RequestParam Integer num2) {
         return calculateService.divide(num1, num2);
     }
