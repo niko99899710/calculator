@@ -29,21 +29,21 @@ public class HelloCalculator {
 
     @GetMapping(path = "/plus?num1=5&num2=5")
     public Integer plus(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return serviceCalculator.plus(5, 5);
+        return calculateService.plus(5, 5);
     }
 
     @GetMapping(path = "/minus?num1=5&num2=5")
     public Integer minus(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return serviceCalculator.plus(5, 5);
+        return calculateService.minus(5, 5);
     }
 
     @GetMapping(path = "/multiply?num1=5&num2=5")
     public Integer multiply(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return serviceCalculator.plus(5, 5);
+        return calculateService.multiply(5, 5);
     }
 
     @GetMapping(path = "/divide?num1=5&num2=5")
     public Integer divide(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return serviceCalculator.plus(5, 5);
+        return calculateService.divide(5, 5);
     }
 }
