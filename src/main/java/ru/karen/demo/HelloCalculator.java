@@ -26,24 +26,23 @@ public class HelloCalculator {
     public String writeCalculator () {
         return calculateService.writeCalculator();
     }
-
-    @GetMapping(path = "/plus?num1=5&num2=5")
-    public Integer plus(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return calculateService.plus(5, 5);
+    @GetMapping (path = "/calculator/plus")
+    public Integer plus (@RequestParam Integer num1, @RequestParam Integer num2) {
+        return calculateService.plus(num1, num2);
     }
 
-    @GetMapping(path = "/minus?num1=5&num2=5")
-    public Integer minus(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return calculateService.minus(5, 5);
+    @GetMapping(path = "/minus")
+    public Integer minus(@RequestParam Integer num1, @RequestParam Integer num2) {
+        return calculateService.minus(num1, num2);
     }
 
-    @GetMapping(path = "/multiply?num1=5&num2=5")
-    public Integer multiply(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return calculateService.multiply(5, 5);
+    @GetMapping(path = "/calculator/multiply")
+    public Integer multiply(@RequestParam Integer num1, @RequestParam Integer num2) {
+        return calculateService.multiply(num1, num2);
     }
 
-    @GetMapping(path = "/divide?num1=5&num2=5")
-    public Integer divide(@RequestParam ("5") Integer num1, @RequestParam ("5") Integer  num2) {
-        return calculateService.divide(5, 5);
+    @GetMapping(path = "/calculator/divide")
+    public Integer divide(@RequestParam Integer num1, @RequestParam Integer num2) {
+        return calculateService.divide(num1, num2);
     }
 }
