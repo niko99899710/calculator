@@ -41,7 +41,7 @@ public class HelloCalculator {
         return calculateService.multiply(num1, num2);
     }
 
-    @GetMapping (path = "divide")
+    @GetMapping (path = "/calculator/divide")
     public Integer divide(@RequestParam Integer num1, @RequestParam Integer num2) {
         return calculateService.divide(num1, num2);
     }
