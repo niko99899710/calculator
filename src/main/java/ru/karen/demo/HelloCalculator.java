@@ -22,12 +22,12 @@ public class HelloCalculator {
         return calculateService.calculator();
     }
 
-    @GetMapping(path = "/calculator")
+    @GetMapping(path = "/calculator/")
     public String writeCalculator () {
         return calculateService.writeCalculator();
     }
     @GetMapping (path = "/calculator/plus")
-    public Integer plus (@RequestParam Integer num1, @RequestParam Integer num2) {
+    public Integer plus(@RequestParam Integer num1, @RequestParam Integer num2) {
         return calculateService.plus(num1, num2);
     }
 
